@@ -1,0 +1,136 @@
+.about {
+  padding: 110px 0;
+}
+
+@media screen and (max-width: 924px) {
+  .about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 23px;
+  margin: 0;
+}
+
+@media screen and (max-width: 544px) {
+  .about__title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 28px;
+  }
+}
+
+.about__description {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 26px 40px;
+  margin-top: 70px;
+  margin-bottom: 110px;
+  grid-auto-flow: column;
+}
+
+@media screen and (max-width: 924px) {
+  .about__description {
+    margin-bottom: 93px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .about__description {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-auto-flow: row;
+    gap: 16px 56px;
+  }
+}
+
+.about__description-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+@media screen and (max-width: 544px) {
+  .about__description-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.about__description-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 924px) {
+  .about__description-subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .about__description-subtitle {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.about__chart {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5px 0;
+}
+
+.about__chart-box_one {
+  background-color: black;
+  color: white;
+}
+
+.about__chart-box_four {
+  background-color: #F2F2F2;
+  ;
+}
+
+.about__chart-box_bottom {
+  color: #A0A0A0;
+}
+
+.about__chart-box {
+  text-align: center;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 9px 14px;
+}
+
+@media screen and (max-width: 544px) {
+  .about__chart-box {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 10px 11px;
+  }
+}
