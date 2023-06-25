@@ -14,8 +14,8 @@ function Main(props) {
       <Header
         onClick={props.onClick}
       />
-      <Promo />
       <main className="content page__content">
+        <Promo />
         <AboutProject />
         <Techs />
         <AboutMe />

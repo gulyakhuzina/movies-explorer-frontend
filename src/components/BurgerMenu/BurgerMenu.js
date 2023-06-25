@@ -4,7 +4,7 @@ import "./BurgerMenu.css"
 
 function BurgerMenu(props) {
   return (
-    <div className="menu__burger">
+    <div className="menu">
       <nav className="menu__container">
         <div className="menu__container-main">
           <NavLink to="/" onClick={props.onClick} className={({ isActive }) => `menu__link ${isActive ? "menu__link_active" : ""}`}>Главная</NavLink>

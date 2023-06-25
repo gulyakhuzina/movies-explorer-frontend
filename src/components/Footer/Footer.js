@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css"
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
@@ -8,8 +9,12 @@ function Footer(props) {
       <div className="footer__about">
         <p className="footer__year">© 2023</p>
         <ul className="footer__tech">
-          <li>Яндекс.Практикум</li>
-          <li>Github</li>
+          <li>
+            <Link to="#" target="_blank" className="footer__tech-link">Яндекс.Практикум</Link>
+          </li>
+          <li>
+            <Link  to="#" target="_blank" className="footer__tech-link">Github</Link>
+          </li>
         </ul>
       </div>
     </footer>

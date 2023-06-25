@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation, NavLink } from 'react-router-dom';
 import "./NavBar.css";
 
 function NavBar(props) {
@@ -11,24 +11,30 @@ function NavBar(props) {
     navigate('/signin', { replace: true });
   }
 
+  function profileClick() {
+    navigate('/profile', { replace: true });
+  }
+
   return (
     <>
-      {path === "/signup" ? <p className="header__welcome">Добро пожаловать!</p> : <></>}
-      {path === "/signin" ? <p className="header__welcome">Рады видеть!</p> : <></>}
-      {path === "/" ? <div className="header__links">
-        <Link to="/signup" className="header__link">Регистрация</Link>
-        <button onClick={signIn} className="header__button">Войти</button>
-      </div> : <></>}
+      {path === "/signup" ? <h1 className="header__welcome">Добро пожаловать!</h1> : <></>}
+      {path === "/signin" ? <h1 className="header__welcome">Рады видеть!</h1> : <></>}
+      {path === "/" ? <nav className="header__links">
+        <NavLink to="/signup" className="header__link">Регистрация</NavLink>
+        <button onClick={signIn} className="header__button" type="button">Войти</button>
+      </nav> : <></>}
       {(props.loggedIn && path !== "/") ? <>
-        <div className="header__links header__links_login">
-          <Link to="/movies" className="header__link">Фильмы</Link>
-          <Link to="/saved-movies" className="header__link">Сохранённые фильмы</Link>
-          <Link to="/profile" className="header__link">Аккаунт</Link>
-        </div>
-        <div className="menu__burger-button" onClick={props.onClick}>
-          <div className="menu__burger-line menu__burger-line_1"></div>
-          <div className="menu__burger-line menu__burger-line_2"></div>
-          <div className="menu__burger-line menu__burger-line_3"></div>
+        <nav className="header__links header__links_login">
+          <div>
+            <NavLink to="/movies" className={({ isActive }) => `header__link_nav ${isActive ? "header__link_active" : ""}`}>Фильмы</NavLink>
+            <NavLink to="/saved-movies" className={({ isActive }) => `header__link_nav ${isActive ? "header__link_active" : ""}`}>Сохранённые фильмы</NavLink>
+          </div>
+          <button onClick={profileClick} className="header__button-nav" type="button">Аккаунт</button>
+        </nav>
+        <div className="menu-button" onClick={props.onClick}>
+          <div className="menu-line menu-line_1"></div>
+          <div className="menu-line menu-line_2"></div>
+          <div className="menu-line menu-line_3"></div>
         </div>
       </> : <></>}
     </>

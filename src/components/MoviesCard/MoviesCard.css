@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   background: #F9F9F9;
-  margin-bottom: 40px;
-  padding: 22px 0 0 22px;
+  margin-bottom: 39px;
 }
 
 @media screen and (max-width: 544px) {
   .movies__about {
     flex-direction: column-reverse;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     padding: 0;
     position: relative;
   }
@@ -23,6 +22,19 @@
   margin-bottom: 10px;
 }
 
+.movies__text {
+  padding: 20px 0 18px 22px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__text {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+  }
+}
+
 .movies__name {
   margin-block: 0;
   font-style: normal;
@@ -33,27 +45,28 @@
 
 @media screen and (max-width: 544px) {
   .movies__name {
-    margin-top: 14px;
+    margin-top: 13px;
     font-size: 12px;
     line-height: 15px;
     padding-left: 12px;
   }
 }
 
-
 .movies__duration {
-  margin-top: 13px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 27px;
   color: #A0A0A0;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 544px) {
   .movies__duration {
-    margin-top: 8px;
+    margin-top: 7px;
     margin-bottom: 14px;
     font-size: 11px;
     line-height: 13px;
     padding-left: 12px;
+    order: 2;
   }
 }
 
@@ -66,9 +79,8 @@
 
 @media screen and (max-width: 544px) {
   .movies__like-button {
-    position: absolute;
-    right: 20px;
-    bottom: 33px;
+    align-self: flex-end;
+    margin-right: 16px;
   }
 }
 
@@ -90,9 +102,8 @@
 
 @media screen and (max-width: 544px) {
   .movies__close-button {
-    position: absolute;
-    right: 20px;
-    bottom: 38px;
+    align-self: flex-end;
+    margin-right: 16px;
   }
 }
 
@@ -102,8 +113,19 @@
   cursor: pointer;
 }
 
+.movies__link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.movies__image {
+  width: 220px;
+  padding: 5px;
+}
+
 @media screen and (max-width: 544px) {
   .movies__image {
     width: 300px;
+    padding: 0;
   }
 }

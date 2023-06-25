@@ -17,12 +17,13 @@ function App() {
   const [preload, setPreload] = React.useState(false);
 
   function burgerClick() {
-    document.querySelector(".menu__burger").classList.toggle("menu__burger_visible");
-    document.querySelector(".menu__burger").classList.toggle("menu__burger_shadow");
-    const lines = document.querySelectorAll(".menu__burger-line");
+    document.querySelector(".menu").classList.toggle("menu_visible");
+    document.querySelector(".menu").classList.toggle("menu_shadow");
+    document.querySelector(".menu-button").classList.toggle("menur-button_close");
+    const lines = document.querySelectorAll(".menu-line");
 
     lines.forEach((line) => {
-      line.classList.toggle("menu__burger-close");
+      line.classList.toggle("menu-close");
     })
   }
 

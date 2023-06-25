@@ -13,7 +13,7 @@ function Movies(props) {
         loggedIn={props.loggedIn}
         onClick={props.onClick}
       />
-      <main className="content page__content page__content_movies">
+      <main className="content wrapper wrapper_movies">
         <SearchForm
           onSearch={props.onSearch}
         />

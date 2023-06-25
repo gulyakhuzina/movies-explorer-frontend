@@ -3,7 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 0 60px;
+  margin: 245px 0 60px;
+}
+
+@media screen and (max-width: 924px) {
+  .not-found {
+    margin-top: 407px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .not-found {
+    margin-top: 329px;
+  }
 }
 
 .not-found__title {
@@ -12,13 +24,21 @@
   font-size: 140px;
   line-height: 169px;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
+  
+}
+
+@media screen and (max-width: 924px) {
+  .not-found__title {
+    margin-bottom: 4px;
+  }
 }
 
 @media screen and (max-width: 544px) {
   .not-found__title {
     font-size: 80px;
     line-height: 97px;
+    margin-bottom: 11px;
   }
 }
 
@@ -35,6 +55,7 @@
   .not-found__subtitle {
     font-size: 12px;
     line-height: 15px;
+    margin-bottom: 283px;
   }
 }
 

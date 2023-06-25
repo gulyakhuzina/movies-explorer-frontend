@@ -43,6 +43,12 @@
   padding: 70px 0 0;
 }
 
+@media screen and (max-width: 924px) {
+  .header_entry {
+    padding-top: 213px;
+  }
+}
+
 @media screen and (max-width: 544px) {
   .header_entry {
     max-width: 260px;
