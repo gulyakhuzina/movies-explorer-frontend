@@ -52,7 +52,7 @@
   }
 }
 
-.header__link_active {
+.header__link-nav_active {
   font-weight: 500;
 }
 
@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-.header__link_nav {
+.header__link-nav {
   text-decoration: none;
   color: black;
   font-size: 14px;

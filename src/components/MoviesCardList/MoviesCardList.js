@@ -21,8 +21,8 @@ function MoviesCardList(props) {
             />
           ))}
         </ul>
-        {path === "/movies" ? <div className="movies__more">
-          <button className="movies__more-button" type="button">Ещё</button>
+        {path === "/movies" ? <div className="movies-more">
+          <button className="movies-more__button" type="button">Ещё</button>
         </div> : <></>}
       </section>
     </>

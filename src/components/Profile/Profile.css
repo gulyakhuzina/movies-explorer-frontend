@@ -112,7 +112,15 @@
   cursor: pointer;
 }
 
-.profile__button_hidden {
+.profile__button-edit_hidden {
+  display: none;
+}
+
+.profile__button-save_hidden {
+  display: none;
+}
+
+.profile__button-exit_hidden {
   display: none;
 }
 

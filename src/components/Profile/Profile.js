@@ -51,9 +51,9 @@ function Profile(props) {
             />
           </form>
           <div className="profile__button">
-            <button onClick={handleClick} className={`profile__button-edit ${active ? "profile__button_hidden" : ""}`} type="button">Редактировать</button>
-            <button onClick={handleClick} className={`profile__button-save ${!active ? "profile__button_hidden" : ""}`} type="submit">Сохранить</button>
-            <button onClick={signOut} className={`profile__button-exit ${active ? "profile__button_hidden" : ""}`} type="button">Выйти из аккаунта</button>
+            <button onClick={handleClick} className={`profile__button-edit ${active ? "profile__button-edit_hidden" : ""}`} type="button">Редактировать</button>
+            <button onClick={handleClick} className={`profile__button-save ${!active ? "profile__button-save_hidden" : ""}`} type="submit">Сохранить</button>
+            <button onClick={signOut} className={`profile__button-exit ${active ? "profile__button-exit_hidden" : ""}`} type="button">Выйти из аккаунта</button>
           </div>
         </section>
       </main>

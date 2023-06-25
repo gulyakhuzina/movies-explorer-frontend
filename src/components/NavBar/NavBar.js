@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate, useLocation, NavLink } from 'react-router-dom';
+import { useNavigate, useLocation, NavLink } from 'react-router-dom';
 import "./NavBar.css";
 
 function NavBar(props) {
@@ -26,8 +26,8 @@ function NavBar(props) {
       {(props.loggedIn && path !== "/") ? <>
         <nav className="header__links header__links_login">
           <div>
-            <NavLink to="/movies" className={({ isActive }) => `header__link_nav ${isActive ? "header__link_active" : ""}`}>Фильмы</NavLink>
-            <NavLink to="/saved-movies" className={({ isActive }) => `header__link_nav ${isActive ? "header__link_active" : ""}`}>Сохранённые фильмы</NavLink>
+            <NavLink to="/movies" className={({ isActive }) => `header__link-nav ${isActive ? "header__link-nav_active" : ""}`}>Фильмы</NavLink>
+            <NavLink to="/saved-movies" className={({ isActive }) => `header__link-nav ${isActive ? "header__link-nav_active" : ""}`}>Сохранённые фильмы</NavLink>
           </div>
           <button onClick={profileClick} className="header__button-nav" type="button">Аккаунт</button>
         </nav>

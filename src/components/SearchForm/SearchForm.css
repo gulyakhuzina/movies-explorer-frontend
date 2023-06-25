@@ -1,4 +1,4 @@
-.movies__search-form {
+.search {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -9,13 +9,13 @@
 }
 
 @media screen and (max-width: 924px) {
-  .movies__search-form {
+  .search {
     margin-top: 73px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-form {
+  .search {
     margin-top: 79px;
     background-color: white;
     flex-direction: column;
@@ -25,7 +25,7 @@
   }
 }
 
-.movies__search {
+.search__form {
   max-width: 1140px;
   width: 100%;
   display: flex;
@@ -33,7 +33,7 @@
   max-width: 913px;
 }
 
-.movies__search-input {
+.search__input {
   width: 100%;
   border: none;
   border-radius: 9px;
@@ -44,12 +44,12 @@
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-input {
+  .search__input {
     padding-top: 22px;
   }
 }
 
-.movies__search-input::placeholder {
+.search__input::placeholder {
   background: url('../../images/icon-search.svg') no-repeat;
   background-position: 1%;
   padding-left: 44px;
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-input::placeholder {
+  .search__input::placeholder {
     background: none;
     padding-left: 0;
     font-size: 14px;
@@ -69,36 +69,12 @@
   }
 }
 
-.movies__search-input:focus {
+.search__input:focus {
   outline: none;
   border: 1px solid #E8E8E8;
 }
 
-.movies__search-line {
-  background: #E8E8E8;
-  transform: rotate(90deg);
-  width: 40px;
-  height: 1px;
-  position: absolute;
-  right: 207px;
-}
-
-@media screen and (max-width: 924px) {
-  .movies__search-line {
-    right: 188px;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .movies__search-line {
-    transform: none;
-    bottom: 33px;
-    width: 100%;
-    right: 0;
-  }
-}
-
-.movies__search-button {
+.search__button {
   background: url("../../images/find.svg") no-repeat;
   width: 34px;
   height: 34px;
@@ -111,36 +87,36 @@
 
 
 @media screen and (max-width: 544px) {
-  .movies__search-button {
+  .search__button {
     padding-right: 35px;
     padding-left: 35px;
   }
 }
 
-.movies__search-button:hover {
+.search__button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.movies__search-checkbox {
+.search__checkbox {
   height: 20px;
   display: flex;
   margin-left: 30px;
 }
 
 @media screen and (max-width: 924px) {
-  .movies__search-checkbox {
+  .search__checkbox {
     margin-left: 11px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-checkbox {
+  .search__checkbox {
     margin-top: 50px;
   }
 }
 
-.movies__search-invisible-checkbox {
+.search__checkbox-invisible {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -148,7 +124,7 @@
   clip-path: inset(0 0 0 0);
 }
 
-.movies__search-visible-checkbox {
+.search__checkbox-visible {
   display: inline-block;
   vertical-align: middle;
   width: 36px;
@@ -157,23 +133,23 @@
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-visible-checkbox {
+  .search__checkbox-visible {
     margin-right: 21px;
   }
 }
 
-.movies__search-invisible-checkbox+.movies__search-visible-checkbox {
+.search__checkbox-invisible+.search__checkbox-visible {
   display: block;
   background: url('../../images/uncheck.svg') no-repeat;
   cursor: pointer;
   transition: opacity .3s ease;
 }
 
-.movies__search-invisible-checkbox:checked+.movies__search-visible-checkbox {
+.search__checkbox-invisible:checked+.search__checkbox-visible {
   background-image: url('../../images/check.svg');
 }
 
-.movies__search-text {
+.search__checkbox-text {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -181,13 +157,13 @@
 }
 
 @media screen and (max-width: 924px) {
-  .movies__search-text {
+  .search__checkbox-text {
     margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .movies__search-text {
+  .search__checkbox-text {
     font-size: 11px;
     line-height: 18px;
   }
