@@ -1,11 +1,12 @@
 .tech {
-  padding: 94px 0;
+  padding: 94px 70px;
 }
 
 @media screen and (max-width: 924px) {
   .tech {
     padding-top: 84px;
     padding-bottom: 90px;
+    padding: 84px 50px 90px;
   }
 }
 
@@ -15,6 +16,7 @@
     padding-bottom: 70px;
     max-width: 284px;
     margin: 0 auto;
+    background-color: white;
   }
 }
 

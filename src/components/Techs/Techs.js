@@ -3,7 +3,7 @@ import "./Techs.css"
 
 function Techs(props) {
   return (
-    <section className="tech wrapper">
+    <section className="tech wrapper wrapper_tech">
       <h2 className="tech__title">Технологии</h2>
       <h3 className="tech__subtitle">7 технологий</h3>
       <p className="tech__description">На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
