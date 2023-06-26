@@ -31,6 +31,7 @@
 }
 
 .header__logo:hover {
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -53,5 +54,6 @@
   .header_entry {
     max-width: 260px;
     text-align: center;
+    padding-top: 38px;
   }
 }

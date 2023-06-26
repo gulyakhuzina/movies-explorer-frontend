@@ -108,14 +108,19 @@
 @media screen and (max-width: 788px) {
   .menu__link_account {
     position: absolute;
-    bottom: 73px;
+    bottom: 100px;
     left: 50%;
-    margin-left: -28px;
+    margin-left: -48px;
+    border: none;
+    border-radius: 20px;
+    background: #F9F9F9;
+    padding: 8px 20px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 544px) {
   .menu__link_account {
-    bottom: 29px;
+    bottom: 46px;
   }
 }

@@ -10,10 +10,10 @@ function Footer(props) {
         <p className="footer__year">© 2023</p>
         <ul className="footer__tech">
           <li>
-            <Link to="#" target="_blank" className="footer__tech-link">Яндекс.Практикум</Link>
+            <a href="https://practicum.yandex.ru/" target="_blank" className="footer__tech-link" rel="noopener noreferrer">Яндекс.Практикум</a>
           </li>
           <li>
-            <Link  to="#" target="_blank" className="footer__tech-link">Github</Link>
+            <a href="https://github.com/gulyakhuzina" target="_blank" className="footer__tech-link" rel="noopener noreferrer">Github</a>
           </li>
         </ul>
       </div>

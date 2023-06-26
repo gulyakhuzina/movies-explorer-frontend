@@ -18,12 +18,13 @@ function MoviesCardList(props) {
               duration={movie.duration}
               image={movie.image}
               like={movie.like}
+              link={movie.link}
             />
           ))}
         </ul>
-        {path === "/movies" ? <div className="movies-more">
+        <div className={`movies-more ${path === "/saved-movies" ? "movies-more_hidden" : ""}`}>
           <button className="movies-more__button" type="button">Ещё</button>
-        </div> : <></>}
+        </div>
       </section>
     </>
   );

@@ -9,22 +9,22 @@ function Portfolio(props) {
       <h3 className="portfolio__title">Портфолио</h3>
       <ul className="portfolio__sites">
         <li className="portfolio__site">
-          <Link to="#" target="_blank" className="portfolio__link">
+          <a href="https://gulyakhuzina.github.io/how-to-learn/index.html" target="_blank" className="portfolio__link" rel="noopener noreferrer">
             <p className="portfolio__text">Статичный сайт</p>
             <img className="portfolio__arrow" src={arrowSites} alt="Стрелка" />
-          </Link>
+          </a>
         </li>
         <li className="portfolio__site">
-          <Link to="#" target="_blank" className="portfolio__link">
+          <a href="https://gulyakhuzina.github.io/russian-travel/index.html" target="_blank" className="portfolio__link" rel="noopener noreferrer">
             <p className="portfolio__text">Адаптивный сайт</p>
             <img className="portfolio__arrow" src={arrowSites} alt="Стрелка" />
-          </Link>
+          </a>
         </li>
         <li className="portfolio__site">
-          <Link to="#" target="_blank" className="portfolio__link">
+          <a href="https://mesto.khuzinagulya.nomoredomains.monster" target="_blank" className="portfolio__link" rel="noopener noreferrer">
             <p className="portfolio__text">Одностраничное приложение</p>
             <img className="portfolio__arrow" src={arrowSites} alt="Стрелка" />
-          </Link>
+          </a>
         </li>
       </ul>
     </section>

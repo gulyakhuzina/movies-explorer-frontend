@@ -10,7 +10,7 @@ function SearchForm(props) {
     <section>
       <form className="search">
         <div className="search__form">
-          <input className='search__input' placeholder="Фильм" required />
+          <input className='search__input' placeholder="Фильм" type="text" required />
           <button className="search__button" onClick={props.onSearch} type="submit" />
         </div>
         <label className="search__checkbox">

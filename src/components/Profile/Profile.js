@@ -31,6 +31,7 @@ function Profile(props) {
               id="name"
               className="profile__input"
               type="text"
+              placeholder="Имя"
               minLength={2}
               maxLength={30}
               defaultValue="Виталий"
@@ -43,6 +44,7 @@ function Profile(props) {
               id="email"
               className="profile__input"
               type="email"
+              placeholder="E-mail"
               minLength={2}
               maxLength={30}
               defaultValue="pochta@yandex.ru"

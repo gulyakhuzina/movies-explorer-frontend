@@ -1,8 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./BurgerMenu.css"
 
 function BurgerMenu(props) {
+  const navigate = useNavigate();
+
+  function profileClick() {
+    navigate('/profile', { replace: true });
+  }
+
   return (
     <div className="menu">
       <nav className="menu__container">
@@ -11,7 +17,7 @@ function BurgerMenu(props) {
           <NavLink to="/movies" onClick={props.onClick} className={({ isActive }) => `menu__link ${isActive ? "menu__link_active" : ""}`}>Фильмы</NavLink>
           <NavLink to="/saved-movies" onClick={props.onClick} className={({ isActive }) => `menu__link ${isActive ? "menu__link_active" : ""}`}>Сохранённые фильмы</NavLink>
         </div>
-        <NavLink to="/profile" onClick={props.onClick} className={({ isActive }) => `menu__link menu__link_account ${isActive ? "menu__link_active" : ""}`}>Аккаунт</NavLink>
+        <button onClick={profileClick} className="menu__link menu__link_account" type="button">Аккаунт</button>
       </nav>
     </div>
   );

@@ -131,13 +131,16 @@
 }
 
 .student__photo {
-  max-width: 270px;
+  border-radius: 10px;
+  height: 327px;
   object-fit: cover;
+  width: 270px;
 }
 
 @media screen and (max-width: 924px) {
   .student__photo {
     max-width: 255px;
+    height: 307px;
   }
 }
 
@@ -145,6 +148,7 @@
   .student__photo {
     max-width: 292px;
     margin-top: 60px;
+    height: 352px;
     width: 100%;
   }
 }

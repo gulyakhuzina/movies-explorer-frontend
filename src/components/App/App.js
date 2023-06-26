@@ -15,11 +15,12 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 function App() {
   const [loggedIn, setLoggedIn] = React.useState(true);
   const [preload, setPreload] = React.useState(false);
+  const myRef = React.createRef();
 
   function burgerClick() {
     document.querySelector(".menu").classList.toggle("menu_visible");
     document.querySelector(".menu").classList.toggle("menu_shadow");
-    document.querySelector(".menu-button").classList.toggle("menur-button_close");
+    document.querySelector(".menu-button").classList.toggle("menu-button_close");
     const lines = document.querySelectorAll(".menu-line");
 
     lines.forEach((line) => {
@@ -32,6 +33,10 @@ function App() {
     setPreload(true);
     setTimeout(() => setPreload(false), 1000);
   }
+
+  function scrollToMyRef() {
+    window.scrollTo(0, myRef.current.scrollHeight);
+  };
 
   return (
     <div className="page">
@@ -67,6 +72,8 @@ function App() {
         <Route exact path="/" element={
           <Main
             onClick={burgerClick}
+            scrollTo={scrollToMyRef}
+            myRef={myRef}
           />}
         />
         <Route exact path="*" element={

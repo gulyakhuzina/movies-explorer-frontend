@@ -15,7 +15,8 @@
 
 .header__links {
   display: flex;
-  gap: 42px;
+  /* gap: 42px; было */
+  gap: 30px; /* главная страница 1280px */
   align-items: center;
   font-style: normal;
 }
@@ -46,6 +47,11 @@
   line-height: 16px;
 }
 
+.header__link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 544px) {
   .header__link {
     font-size: 10px;
@@ -67,6 +73,11 @@
   font-size: 14px;
   line-height: 18px;
   margin-right: 22px;
+}
+
+.header__link-nav:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .header__button {
@@ -96,13 +107,14 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  background-color: white;
   border: none;
-  margin-right: 17px;
+  border-radius: 20px;
+  background: #F9F9F9;
+  padding: 8px 20px;
 }
 
 .header__button-nav:hover {
-  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -126,14 +138,14 @@
 @media screen and (max-width: 788px) {
   .menu-button_close {
     position: absolute;
-    right: 5px;
+    right: 18px;
     top: 21px;
   }
 }
 
 @media screen and (max-width: 544px) {
   .menu-button_close {
-    right: 16px;
+    right: 8px;
     top: 13px;
   }
 }

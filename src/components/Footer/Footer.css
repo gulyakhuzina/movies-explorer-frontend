@@ -1,10 +1,11 @@
 .footer {
-  padding: 78px 70px 20px;
+  /* padding: 78px 70px 20px; было */
+  padding: 60px 70px 20px; /* главная страница 1280px*/
 }
 
 @media screen and (max-width: 924px) {
   .footer {
-    padding-top: 62px;
+    padding-top: 59px;
     padding-left: 30px;
     padding-right: 30px;
   }

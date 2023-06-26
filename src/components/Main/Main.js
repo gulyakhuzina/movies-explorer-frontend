@@ -15,8 +15,12 @@ function Main(props) {
         onClick={props.onClick}
       />
       <main className="content page__content">
-        <Promo />
-        <AboutProject />
+        <Promo
+          scrollTo={props.scrollTo}
+        />
+        <AboutProject
+          myRef={props.myRef}
+        />
         <Techs />
         <AboutMe />
         <Portfolio />
