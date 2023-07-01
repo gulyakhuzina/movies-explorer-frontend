@@ -1,0 +1,37 @@
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 140px);
+  max-width: 1140px
+}
+
+.wrapper_tech {
+  max-width: 1280px;
+  margin: 0;
+  background: #F5F5F5;
+}
+
+@media screen and (max-width: 924px) {
+  .wrapper {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .wrapper_movies {
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .wrapper {
+    width: calc(100% - 28px);
+    max-width: 292px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .wrapper_movies {
+    width: calc(100% - 20px);
+    max-width: 300px;
+  }
+}

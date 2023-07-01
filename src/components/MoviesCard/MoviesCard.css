@@ -1,0 +1,131 @@
+.movies__about {
+  display: flex;
+  justify-content: space-between;
+  background: #F9F9F9;
+  margin-bottom: 39px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__about {
+    flex-direction: column-reverse;
+    margin-bottom: 19px;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.movies__hidden {
+  display: none;
+}
+
+.movies__about:last-of-type {
+  margin-bottom: 10px;
+}
+
+.movies__text {
+  padding: 20px 0 18px 22px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__text {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+  }
+}
+
+.movies__name {
+  margin-block: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__name {
+    margin-top: 13px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 12px;
+  }
+}
+
+.movies__duration {
+  margin-top: 15px;
+  margin-bottom: 27px;
+  color: #A0A0A0;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__duration {
+    margin-top: 7px;
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 12px;
+    order: 2;
+  }
+}
+
+.movies__like-button {
+  width: 14px;
+  height: 12px;
+  border: none;
+  background: url("../../images/like.svg");
+}
+
+@media screen and (max-width: 544px) {
+  .movies__like-button {
+    align-self: flex-end;
+    margin-right: 16px;
+  }
+}
+
+.movies__like-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.movies__like-button_active {
+  background: url("../../images/like_active.svg");
+}
+
+.movies__close-button {
+  width: 14px;
+  height: 12px;
+  border: none;
+  background: url("../../images/close.svg");
+}
+
+@media screen and (max-width: 544px) {
+  .movies__close-button {
+    align-self: flex-end;
+    margin-right: 16px;
+  }
+}
+
+
+.movies__close-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.movies__link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.movies__image {
+  width: 220px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 544px) {
+  .movies__image {
+    width: 300px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,175 @@
+.search {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 63px;
+  background-color: #F9F9F9;
+  border-radius: 9px;
+}
+
+@media screen and (max-width: 924px) {
+  .search {
+    margin-top: 73px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .search {
+    margin-top: 79px;
+    background-color: white;
+    flex-direction: column;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 49px;
+  }
+}
+
+.search__form {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 913px;
+}
+
+.search__input {
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 19px;
+  background: transparent;
+}
+
+@media screen and (max-width: 544px) {
+  .search__input {
+    padding-top: 22px;
+  }
+}
+
+.search__input::placeholder {
+  background: url('../../images/icon-search.svg') no-repeat;
+  background-position: 1%;
+  padding-left: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #A0A0A0;
+}
+
+@media screen and (max-width: 544px) {
+  .search__input::placeholder {
+    background: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.search__input:focus {
+  outline: none;
+  border: 1px solid #E8E8E8;
+}
+
+.search__button {
+  background: url("../../images/find.svg") no-repeat;
+  width: 34px;
+  height: 34px;
+  border: none;
+  display: block;
+  border-right: 1px solid #E8E8E8;
+  padding: 20px 46px;
+  background-position: center;
+}
+
+
+@media screen and (max-width: 544px) {
+  .search__button {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.search__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.search__checkbox {
+  height: 20px;
+  display: flex;
+  margin-left: 30px;
+}
+
+.search__checkbox:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 924px) {
+  .search__checkbox {
+    margin-left: 11px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .search__checkbox {
+    margin-top: 50px;
+  }
+}
+
+.search__checkbox-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+.search__checkbox-visible {
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 20px;
+  margin-right: 13px;
+}
+
+@media screen and (max-width: 544px) {
+  .search__checkbox-visible {
+    margin-right: 21px;
+  }
+}
+
+.search__checkbox-invisible+.search__checkbox-visible {
+  display: block;
+  background: url('../../images/uncheck.svg') no-repeat;
+  cursor: pointer;
+  transition: opacity .3s ease;
+}
+
+.search__checkbox-invisible:checked+.search__checkbox-visible {
+  background-image: url('../../images/check.svg');
+}
+
+.search__checkbox-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 924px) {
+  .search__checkbox-text {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .search__checkbox-text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
