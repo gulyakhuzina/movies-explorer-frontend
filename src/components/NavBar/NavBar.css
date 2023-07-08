@@ -113,6 +113,10 @@
   padding: 8px 20px;
 }
 
+.header__button-nav_bckg {
+  background: transparent;
+}
+
 .header__button-nav:hover {
   opacity: 0.8;
   cursor: pointer;

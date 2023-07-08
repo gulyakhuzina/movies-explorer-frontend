@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Portfolio.css"
 import arrowSites from '../../images/arrow-sites.svg';
-import { Link } from 'react-router-dom';
 
 function Portfolio(props) {
   return (

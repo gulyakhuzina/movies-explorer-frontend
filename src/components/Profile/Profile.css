@@ -36,8 +36,8 @@
 }
 
 .profile__form {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
+  flex-direction: column;
   margin-bottom: 204px;
 }
 
@@ -51,6 +51,11 @@
   .profile__form {
     margin-bottom: 361px;
   }
+}
+
+.profile__form-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .profile__label {
@@ -91,6 +96,14 @@
   border-radius: 9px;
 }
 
+.profile__error {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FF4062;
+}
+
 .profile__button {
   display: flex;
   flex-direction: column;
@@ -111,6 +124,11 @@
 .profile__button-edit:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.profile__button-edit:disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .profile__button-edit_hidden {
