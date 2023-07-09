@@ -135,8 +135,11 @@ function App() {
   const handleDeleteLike = async (movie) => {
     try {
       const filteredMovies = JSON.parse(localStorage.getItem('filteredMovies'));
-      const deletedCard = await api.deleteMovie(movie.id)
-      setLikedMovies(likedMovies?.filter(c => c.movieId !== deletedCard.movieId));
+      const savedMovie = likedMovies.find(
+        (card) => card.movieId === movie.id || card.movieId === movie.movieId
+      );
+      const deletedCard = await api.deleteMovie(savedMovie._id)
+      setLikedMovies(likedMovies?.filter(c => c._id !== savedMovie._id));
       filteredMovies.map((c) => {
         if (c.id === deletedCard.movieId) {
           c.like = false;
@@ -241,7 +244,7 @@ function App() {
           <Route exact path="*" element={
             <PageNotFound />}
           />
-          <Route path="*" element={loggedIn ? <Navigate to="/movies" replace /> : <Navigate to="/signin" replace />} />
+          <Route path="*" element={loggedIn ? <Navigate to="/movies" replace /> : <Navigate to="/" replace />} />
         </Routes>
         <BurgerMenu
           onClick={burgerClick}

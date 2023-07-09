@@ -82,7 +82,8 @@ function SavedMovies(props) {
   const handleDeleteMovie = async (movie) => {
     try {
       setPreload(true);
-      const deletedCard = await api.deleteMovie(movie.movieId);
+      console.log(movie._id);
+      const deletedCard = await api.deleteMovie(movie._id);
       setLikedMovies(likedMovies?.filter(c => c.movieId !== deletedCard.movieId));
       localStorage.setItem("likedMovies", JSON.stringify(likedMovies?.filter(c => c.movieId !== deletedCard.movieId)));
       // setSavedFilter(localStorage.getItem("filteredSavedMovies"));
@@ -111,7 +112,6 @@ function SavedMovies(props) {
         .then((moviesData) => {
           localStorage.setItem("likedMovies", JSON.stringify(moviesData));
           setLikedMovies(moviesData);
-          console.log(!moviesForRender.length);
           if (!moviesForRender.length) {
             setMoviesForRender(moviesData);
             setSavedFilter(moviesData);

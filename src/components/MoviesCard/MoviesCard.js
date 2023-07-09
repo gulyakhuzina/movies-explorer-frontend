@@ -34,7 +34,7 @@ function MoviesCard(props) {
   function handleDeleteSavedMovie() {
     props.handleDeleteMovie(props.movie);
   }
-
+  
   return (
     <li key={props.id} className="movies__about">
       <div className="movies__text">
