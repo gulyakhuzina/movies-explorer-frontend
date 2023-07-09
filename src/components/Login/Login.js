@@ -17,7 +17,7 @@ function Login(props) {
   }
 
   return (props.loggedIn ? (
-    <Navigate to="/" replace />
+    <Navigate to="/movies" replace />
   ) :
     <>
       <Header />

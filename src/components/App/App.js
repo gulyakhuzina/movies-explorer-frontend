@@ -55,7 +55,7 @@ function App() {
           console.log(err);
         })
     } else {
-      navigate('/', { replace: true })
+      navigate('/movies', { replace: true })
     }
   }
 

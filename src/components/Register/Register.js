@@ -18,7 +18,7 @@ function Register(props) {
     props.onSubmit(values);
   }
   return (props.loggedIn ? (
-    <Navigate to="/" replace />
+    <Navigate to="/movies" replace />
   ) :
     <>
       <Header />
