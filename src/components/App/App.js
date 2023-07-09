@@ -197,14 +197,14 @@ function App() {
           <Route path="/signup/*" element={
             <Register
               onSubmit={handleSubmitReg}
-              setLoggedIn={setLoggedIn}
+              loggedIn={loggedIn}
               errorsForm={errors}
               preload={preload} />}
           />
           <Route path="/signin/*" element={
             <Login
               onSubmit={handleSubmitAuth}
-              setLoggedIn={setLoggedIn}
+              loggedIn={loggedIn}
               errorsForm={errors}
               preload={preload} />
           }
