@@ -93,7 +93,7 @@
   background: url("../../images/like_active.svg");
 }
 
-.movies__close-button {
+.movies__delete-button {
   width: 14px;
   height: 12px;
   border: none;
@@ -101,14 +101,14 @@
 }
 
 @media screen and (max-width: 544px) {
-  .movies__close-button {
+  .movies__delete-button {
     align-self: flex-end;
     margin-right: 16px;
   }
 }
 
 
-.movies__close-button:hover {
+.movies__delete-button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -120,12 +120,14 @@
 
 .movies__image {
   width: 220px;
+  height: 122px;
   padding: 5px;
 }
 
 @media screen and (max-width: 544px) {
   .movies__image {
     width: 300px;
+    height: 168px;
     padding: 0;
   }
 }

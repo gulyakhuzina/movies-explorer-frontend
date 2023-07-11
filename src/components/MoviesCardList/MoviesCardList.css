@@ -16,6 +16,18 @@
   }
 }
 
+.movies-not-found {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  margin-left: 20px;
+}
+
+.movies-not-found_hidden {
+  display: none;
+}
+
 .movies-more {
   display: flex;
   justify-content: center;

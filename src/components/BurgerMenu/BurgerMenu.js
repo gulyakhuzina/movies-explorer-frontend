@@ -7,6 +7,7 @@ function BurgerMenu(props) {
 
   function profileClick() {
     navigate('/profile', { replace: true });
+    props.onClick();
   }
 
   return (

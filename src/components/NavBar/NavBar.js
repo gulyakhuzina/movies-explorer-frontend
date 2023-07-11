@@ -19,24 +19,23 @@ function NavBar(props) {
     <>
       {path === "/signup" ? <h1 className="header__welcome">Добро пожаловать!</h1> : <></>}
       {path === "/signin" ? <h1 className="header__welcome">Рады видеть!</h1> : <></>}
-      {path === "/" ? <nav className="header__links">
-        <NavLink to="/signup" className="header__link">Регистрация</NavLink>
-        <button onClick={signIn} className="header__button" type="button">Войти</button>
-      </nav> : <></>}
-      {(props.loggedIn && path !== "/") ? <>
+      {props.loggedIn ? <>
         <nav className="header__links header__links_login">
           <div>
             <NavLink to="/movies" className={({ isActive }) => `header__link-nav ${isActive ? "header__link-nav_active" : ""}`}>Фильмы</NavLink>
             <NavLink to="/saved-movies" className={({ isActive }) => `header__link-nav ${isActive ? "header__link-nav_active" : ""}`}>Сохранённые фильмы</NavLink>
           </div>
-          <button onClick={profileClick} className="header__button-nav" type="button">Аккаунт</button>
+          <button onClick={profileClick} className={`header__button-nav ${path === "/" ? "header__button-nav_bckg" : ""}`} type="button">Аккаунт</button>
         </nav>
         <div className="menu-button" onClick={props.onClick}>
           <div className="menu-line menu-line_1"></div>
           <div className="menu-line menu-line_2"></div>
           <div className="menu-line menu-line_3"></div>
         </div>
-      </> : <></>}
+      </> : path === "/" && <nav className="header__links">
+        <NavLink to="/signup" className="header__link">Регистрация</NavLink>
+        <button onClick={signIn} className="header__button" type="button">Войти</button>
+      </nav>}
     </>
   );
 }

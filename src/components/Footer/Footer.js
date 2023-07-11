@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Footer.css"
-import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
@@ -13,7 +12,13 @@ function Footer(props) {
             <a href="https://practicum.yandex.ru/" target="_blank" className="footer__tech-link" rel="noopener noreferrer">Яндекс.Практикум</a>
           </li>
           <li>
-            <a href="https://github.com/gulyakhuzina" target="_blank" className="footer__tech-link" rel="noopener noreferrer">Github</a>
+            <a href="https://github.com/gulyakhuzina"
+              target="_blank"
+              className="footer__tech-link"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </li>
         </ul>
       </div>

@@ -13,6 +13,7 @@ function Main(props) {
     <>
       <Header
         onClick={props.onClick}
+        loggedIn={props.loggedIn}
       />
       <main className="content page__content">
         <Promo
